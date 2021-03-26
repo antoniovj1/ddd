@@ -54,7 +54,7 @@ class CollectionValueObjectTest extends TestCase
         $collection = CollectionValueObject::from([5, 1, 4, 2, 3]);
         $sorted = $collection->sort(
             function ($a , $b){
-                return $a > $b;
+                return $a - $b;
             }
         );
 
