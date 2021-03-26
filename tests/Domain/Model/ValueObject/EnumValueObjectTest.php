@@ -52,10 +52,10 @@ class EnumValueObjectTest extends TestCase
 
     /**
      * @test
-     * @expectedException \InvalidArgumentException
      */
     public function given_invalid_enum_value_when_create_enum_then_throw_exception()
     {
+        $this->expectException(\InvalidArgumentException::class);
         EnumValueObjectTested::from('3');
     }
 

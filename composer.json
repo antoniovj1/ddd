@@ -34,7 +34,7 @@
   },
   "require-dev": {
     "pccomponentes/ganchudo": "^1.0",
-    "phpunit/phpunit": "^7.3",
+    "phpunit/phpunit": "^9.5",
     "pccomponentes/coding-standard": "^1.1"
   }
 }

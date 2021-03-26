@@ -33,10 +33,10 @@ class AggregateRootTest extends TestCase
 
     /**
      * @test
-     * @expectedException \InvalidArgumentException
      */
     public function given_unexpected_id_when_ask_to_launch_event_then_return_expected_info()
     {
+        $this->expectException(\InvalidArgumentException::class);
         $aggregateId = Uuid::v4();
         $aggregateVersion = 0;
         $aggregateRoot = AggregateRootTested::test($aggregateId, $aggregateVersion);
